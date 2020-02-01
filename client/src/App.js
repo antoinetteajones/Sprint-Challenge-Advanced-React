@@ -1,8 +1,8 @@
 import React, {useState, Component} from 'react';
 import './App.css';
-import axios from "axios";
+import axios from 'axios';
 import PlayerCard from "./component/PlayerCard";
-// import {useLocalStorage} from "./hooks/useLocalStorage"
+import NavBar from "./component/NavBar"
 
 class App extends Component {
   // const [player, setPlayer] = useLocalStorage(initialValue);
