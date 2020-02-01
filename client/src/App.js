@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState, Component} from 'react';
 import './App.css';
 import axios from 'axios';
@@ -7,6 +8,14 @@ import NavBar from "./component/NavBar"
 class App extends Component {
   // const [player, setPlayer] = useLocalStorage(initialValue);
 
+=======
+import React, {Component} from 'react';
+import './App.css';
+import axios from "axios";
+import PlayerCard from "./components/PlayerCard"
+
+class App extends Component {
+>>>>>>> ff1bc73c55e9630b76449d5cb703e70a9dd2258c
   constructor(props){
     console.log("Conturctor Invoked")
     super(props);
@@ -34,7 +43,10 @@ class App extends Component {
     console.log("Render Invoked")
   return (
     <div className="App">
+<<<<<<< HEAD
       
+=======
+>>>>>>> ff1bc73c55e9630b76449d5cb703e70a9dd2258c
       <h1>Players</h1>
       <div>
       {this.state.player.map(player => (
@@ -45,7 +57,11 @@ class App extends Component {
           searches={player.searches}/>
         ))}
         </div>
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> ff1bc73c55e9630b76449d5cb703e70a9dd2258c
       </div>
       );
     }
@@ -53,3 +69,4 @@ class App extends Component {
 }
 
 export default App;
+
