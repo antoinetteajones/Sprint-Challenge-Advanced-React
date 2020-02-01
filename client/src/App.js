@@ -1,6 +1,5 @@
 
 import React, {Component} from 'react';
-import React, {useState, Component} from 'react';
 import './App.css';
 import axios from "axios";
 import PlayerCard from "./components/PlayerCard";
