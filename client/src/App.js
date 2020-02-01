@@ -1,12 +1,10 @@
-import React, {useState, Component} from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import axios from 'axios';
-import PlayerCard from "./component/PlayerCard";
-import NavBar from "./component/NavBar"
+import axios from "axios";
+import PlayerCard from "./components/PlayerCard";
+import Navbar from "./component/NavBar";
 
 class App extends Component {
-  // const [player, setPlayer] = useLocalStorage(initialValue);
-
   constructor(props){
     console.log("Conturctor Invoked")
     super(props);
@@ -34,7 +32,7 @@ class App extends Component {
     console.log("Render Invoked")
   return (
     <div className="App">
-      
+      <Navbar />
       <h1>Players</h1>
       <div>
       {this.state.player.map(player => (
@@ -45,7 +43,7 @@ class App extends Component {
           searches={player.searches}/>
         ))}
         </div>
-       
+        
       </div>
       );
     }
@@ -53,3 +51,4 @@ class App extends Component {
 }
 
 export default App;
+

@@ -23,9 +23,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+To be able to use state and the life cycle methods
 - [ ] Name three lifecycle methods and their purposes.
+ 1 - componentWillMount(): It is mostly used to call asynchronous functions or web calls from react native apps.
+ 2 - componentWillUpdate() : This function is however called before re-rendering process and when new state or props is received for updating and dose not allow the this.setState({}) method.
+ 3 - componentWillUnmount() : This function is called right after the component is removed form DOM or destroyed, Users can clear any running timers, stop network requests and cleaning any previously stored value in application.
 - [ ] What is the purpose of a custom hook?
+Custom Hooks offer the flexibility of sharing logic that wasn’t possible in React components before
 - [ ] Why is it important to test our apps?
+Testing determines whether the app can be successfully downloaded, executed and interacted with the supporting back-end content infrastructure.
 
 ## Project Set Up
 
